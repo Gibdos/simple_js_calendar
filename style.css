@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+ul {
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+}
+li {
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 1em;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+}
+li:hover {
+    scale: 1.1;
+    box-shadow: 2px 2px 2px black;
+}
+
+.output {
+    transition: all 350ms ease-in-out;
+}
