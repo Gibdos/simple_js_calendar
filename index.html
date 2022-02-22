@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple JavaScript Calendar</title>
+    <style>
+        ul {
+            list-style: none;
+            width: 50%;
+        }
+        ul li {
+            display: block;
+            float: left;
+            width: 20%;
+            padding: 1em;
+            background: blue;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Simple JS Calendar</h2>
+    <div class="output">
+        <label for="month">Select month: </label>
+        <select id="month">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+
+        <h1></h1>
+
+        <ul>
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
