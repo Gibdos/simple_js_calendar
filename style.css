@@ -11,13 +11,13 @@ ul {
     list-style: none;
     width: 50%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
 }
 li {
-    display: block;
-    float: left;
-    width: 25%;
     padding: 1em;
-    background: blue;
+    background: #2E3F5E;
     color: white;
     font-weight: bold;
     border: 1px solid black;
