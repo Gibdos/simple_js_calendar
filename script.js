@@ -22,7 +22,7 @@ selectMonth.addEventListener('change', () => {
         const callback = element => element.innerHTML == currentDay;
         const elements = Array.from(document.getElementsByTagName('li'));
         const result = elements.filter(callback);
-        result[0].style.cssText = 'background-color: black; text-decoration: underline;';
+        result[0].style.cssText = 'background-color: #5d323b; border: 1px solid white;';
         }
 });
 
