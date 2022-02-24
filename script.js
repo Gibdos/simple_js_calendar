@@ -30,9 +30,8 @@ selectMonth.addEventListener('change', () => {
     }
     createCalendar(days, selectedMonth);
     if (currentMonth === selectedMonth) {
-        const callback = element => element.innerHTML == currentDay;
         const elements = Array.from(document.getElementsByTagName('li'));
-        const result = elements.filter(callback);
+        const result = elements.filter(a => a.innerHTML == currentDay);
         result[0].style.cssText = 'background-color: #5d323b; border: 1px solid white;';
         }
 });
@@ -48,9 +47,8 @@ function createCalendar(days, selectedMonth) {
 }
 
 if (currentMonth === selectedMonth) {
-    const callback = element => element.innerHTML == currentDay;
     const elements = Array.from(document.getElementsByTagName('li'));
-    const result = elements.filter(callback);
+    const result = elements.filter(a => a.innerHTML == currentDay);
     result[0].style.cssText = 'background-color: #5d323b; border: 1px solid white;';
     }
 
@@ -65,10 +63,8 @@ function resetCalendar() {
     }
     createCalendar(days, selectedMonth);
     if (currentMonth === selectedMonth) {
-        const callback = element => element.innerHTML == currentDay;
         const elements = Array.from(document.getElementsByTagName('li'));
-        const result = elements.filter(callback);
+        const result = elements.filter(a => a.innerHTML == currentDay);
         result[0].style.cssText = 'background-color: #5d323b; border: 1px solid white;';
         }
 }
-// APRIL, JUNE, SEPT, NOV = 30
